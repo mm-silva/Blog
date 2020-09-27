@@ -7,7 +7,7 @@ return [
     | Title
     |--------------------------------------------------------------------------
     |
-    | Here you can change the default title of your admin panel.
+    | Here you can change the default title of your author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#61-title
@@ -30,15 +30,15 @@ return [
     |
     */
 
-    'use_ico_only' => false,
-    'use_full_favicon' => false,
+    'use_ico_only' => true,
+    'use_full_favicon' => true,
 
     /*
     |--------------------------------------------------------------------------
     | Logo
     |--------------------------------------------------------------------------
     |
-    | Here you can change the logo of your admin panel.
+    | Here you can change the logo of your author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#63-logo
@@ -54,7 +54,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | User Menu
+    | Author Menu
     |--------------------------------------------------------------------------
     |
     | Here you can activate and change the user menu.
@@ -76,7 +76,7 @@ return [
     | Layout
     |--------------------------------------------------------------------------
     |
-    | Here we change the layout of your admin panel.
+    | Here we change the layout of your author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#65-layout
@@ -110,10 +110,10 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Admin Panel Classes
+    | author Panel Classes
     |--------------------------------------------------------------------------
     |
-    | Here you can change the look and behavior of the admin panel.
+    | Here you can change the look and behavior of the author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#662-admin-panel-classes
@@ -137,7 +137,7 @@ return [
     | Sidebar
     |--------------------------------------------------------------------------
     |
-    | Here we can modify the sidebar of the admin panel.
+    | Here we can modify the sidebar of the author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#67-sidebar
@@ -159,7 +159,7 @@ return [
     | Control Sidebar (Right Sidebar)
     |--------------------------------------------------------------------------
     |
-    | Here we can modify the right sidebar aka control sidebar of the admin panel.
+    | Here we can modify the right sidebar aka control sidebar of the author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#68-control-sidebar-right-sidebar
@@ -179,7 +179,7 @@ return [
     | URLs
     |--------------------------------------------------------------------------
     |
-    | Here we can modify the url settings of the admin panel.
+    | Here we can modify the url settings of the author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#69-urls
@@ -207,7 +207,7 @@ return [
     | Laravel Mix
     |--------------------------------------------------------------------------
     |
-    | Here we can enable the Laravel Mix option for the admin panel.
+    | Here we can enable the Laravel Mix option for the author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#610-laravel-mix
@@ -223,7 +223,7 @@ return [
     | Menu Items
     |--------------------------------------------------------------------------
     |
-    | Here we can modify the sidebar/top navigation of the admin panel.
+    | Here we can modify the sidebar/top navigation of the author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#611-menu
@@ -233,30 +233,38 @@ return [
     'menu' => [
         [
             'text' => 'search',
-            'search' => true,
+            'search' => false,
             'topnav' => true,
         ],
         [
             'text' => 'blog',
-            'url'  => 'admin/blog',
+            'url'  => 'author/blog',
             'can'  => 'manage-blog',
         ],
         ['header' => 'Blog'],
         [
-            'text'        => 'Posts',
-            'url'         => 'admin/posts',
+            'text'        => 'Post',
             'icon'        => 'far fa-fw fa-file',
-            'label_color' => 'success',
+            'submenu' => [
+                [
+                    'text' => 'All Post',
+                    'url'  => 'author/posts',
+                ],
+                [
+                    'text' => 'Create',
+                    'url'         => 'author/posts/create',
+                ],
+            ],
         ],
 
         [
             'text' => 'profile',
-            'url'  => 'admin/settings',
+            'url'  => 'author/settings',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
             'text' => 'change_password',
-            'url'  => 'admin/settings',
+            'url'  => 'author/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
 
@@ -267,7 +275,7 @@ return [
     | Menu Filters
     |--------------------------------------------------------------------------
     |
-    | Here we can modify the menu filters of the admin panel.
+    | Here we can modify the menu filters of the author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#612-menu-filters
@@ -289,7 +297,7 @@ return [
     | Plugins Initialization
     |--------------------------------------------------------------------------
     |
-    | Here we can modify the plugins used inside the admin panel.
+    | Here we can modify the plugins used inside the author panel.
     |
     | For more detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/#613-plugins

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::post('/', function (Request $request) {
+    return dd($request->all());
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin/posts', '@index')->name('home');
+Route::prefix('/author')->group(function () {
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::resource('/posts', 'Author\PostsController');
+});
