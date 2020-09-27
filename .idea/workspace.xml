@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="454b3d9c-66d9-4fc0-b71b-a26b378e5304" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fdd36de-bcc3-4724-b86b-0c55b18cef29.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9fdd36de-bcc3-4724-b86b-0c55b18cef29.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +177,7 @@
       <workItem from="1600983223434" duration="1644000" />
       <workItem from="1601043613497" duration="6696000" />
       <workItem from="1601206638661" duration="750000" />
+      <workItem from="1601207860691" duration="2292000" />
     </task>
     <servers />
   </component>
@@ -207,6 +201,10 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="107" y="24" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1024.728@0.0.1024.728" timestamp="1601050480286" />
+    <state x="239" y="0" width="526" height="723" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601209414385">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="239" y="0" width="526" height="723" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1024.728@0.0.1024.728" timestamp="1601209414385" />
     <state x="295" y="121" width="424" height="479" key="FileChooserDialogImpl" timestamp="1600979894556">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
@@ -215,13 +213,17 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="330" y="289" width="354" height="142" key="NewPhpFileDialog/0.0.1024.728@0.0.1024.728" timestamp="1601049641504" />
-    <state x="295" y="186" width="424" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1601207209941">
+    <state x="295" y="186" width="434" height="324" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1601209369245">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="295" y="186" width="424" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1024.728@0.0.1024.728" timestamp="1601207209941" />
+    <state x="295" y="186" width="434" height="324" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1024.728@0.0.1024.728" timestamp="1601209369245" />
     <state x="355" y="182" width="463" height="357" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601206697793">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="355" y="182" width="463" height="357" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1024.728@0.0.1024.728" timestamp="1601206697793" />
+    <state x="126" y="0" width="762" height="723" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601207973086">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="126" y="0" width="762" height="723" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1024.728@0.0.1024.728" timestamp="1601207973086" />
   </component>
 </project>
