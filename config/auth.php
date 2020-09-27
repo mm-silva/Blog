@@ -66,15 +66,15 @@ return [
     */
 
     'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\Author::class,
-        ],
+//        'users' => [
+//            'driver' => 'eloquent',
+//            'model' => App\Author::class,
+//        ],
 
-//         'users' => [
-//             'driver' => 'database',
-//             'table' => 'author',
-//         ],
+         'users' => [
+             'driver' => 'database',
+             'table' => 'author',
+         ],
     ],
 
     /*
