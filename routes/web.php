@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +14,17 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/', function (Request $request) {
-    return dd($request->all());
-});
+//Route::get('/', function (Request $request) {
+//    return dd($request->all());
+//});
+
+Route::get('/', 'Blog\BlogController@index')->name('blog');
+Route::get('/post/{post}', 'Blog\BlogController@show')->name('show');
 
 Auth::routes();
 
 Route::prefix('/author')->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::resource('/posts', 'Author\PostsController');
+
 });

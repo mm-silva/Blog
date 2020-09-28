@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
   var tags = $('#tags').inputTags({
-    tags: [],
+    tags: tags_here,
     autocomplete: {
       values: dados
     },
@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
       $('span', '#events').text('unselected');
     },
     change: function(elem) {
-      $('.results').empty().html('<strong>Tags:</strong> ' + elem.tags.join(' - '));
+      $('.results').empty().html('<p>press Enter after writing a new tag <strong>- Tags:</strong> </p>' + elem.tags.join(' - '));
     },
     autocompleteTagSelect: function(elem) {
       console.info('autocompleteTagSelect');
@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
   });
 
   $('#tags').inputTags('tags', function(tags) {
-    $('.results').empty().html('<strong>Tags:</strong> ' + tags.join(' - '));
+    $('.results').empty().html('<p>press Enter after writing a new tag <strong>- Tags:</strong></p> ' + tags.join(' - '));
   });
 
   var autocomplete = $('#tags').inputTags('options', 'autocomplete');

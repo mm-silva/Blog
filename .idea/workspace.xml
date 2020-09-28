@@ -20,8 +20,155 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="454b3d9c-66d9-4fc0-b71b-a26b378e5304" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/BlogController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Tags.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/aos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/mediaelementplayer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/backup.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/font/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/font/Flaticon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/font/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/font/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/font/Flaticon.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/font/_flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/font/_flaticon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/font/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/font/flaticon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/flaticon/license/license.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/Read Me.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/demo-files/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/demo-files/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/fonts/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/fonts/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/fonts/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/fonts/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/selection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-migrate-3.0.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.countdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.stellar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/mediaelement-and-player.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_site-base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_site-blocks.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_site-navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fdd36de-bcc3-4724-b86b-0c55b18cef29.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9fdd36de-bcc3-4724-b86b-0c55b18cef29.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Author/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Author/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/apps.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/apps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/author/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/author/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/author/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/author/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/author/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/author/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,9 +301,23 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Área de Trabalho/miniblog/single.html" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/storage/app/public" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Blog" />
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/blog" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -178,6 +339,8 @@
       <workItem from="1601043613497" duration="6696000" />
       <workItem from="1601206638661" duration="750000" />
       <workItem from="1601207860691" duration="2292000" />
+      <workItem from="1601210368779" duration="39710000" />
+      <workItem from="1601287690277" duration="18292000" />
     </task>
     <servers />
   </component>
@@ -201,29 +364,77 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="107" y="24" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1024.728@0.0.1024.728" timestamp="1601050480286" />
-    <state x="239" y="0" width="526" height="723" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601209414385">
+    <state x="239" y="0" width="526" height="723" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601212503655">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="239" y="0" width="526" height="723" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1024.728@0.0.1024.728" timestamp="1601209414385" />
-    <state x="295" y="121" width="424" height="479" key="FileChooserDialogImpl" timestamp="1600979894556">
+    <state x="239" y="0" width="526" height="723" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1024.728@0.0.1024.728" timestamp="1601212503655" />
+    <state x="245" y="113" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601225257758">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="295" y="121" width="424" height="479" key="FileChooserDialogImpl/0.0.1024.728@0.0.1024.728" timestamp="1600979894556" />
-    <state x="330" y="289" width="354" height="142" key="NewPhpFileDialog" timestamp="1601049641504">
+    <state x="245" y="113" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1024.728@0.0.1024.728" timestamp="1601225257758" />
+    <state x="245" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601297801143">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="330" y="289" width="354" height="142" key="NewPhpFileDialog/0.0.1024.728@0.0.1024.728" timestamp="1601049641504" />
+    <state x="245" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1024.728@0.0.1024.728" timestamp="1601297801143" />
+    <state x="257" y="210" width="500" height="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601221774958">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="257" y="210" width="500" height="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1024.728@0.0.1024.728" timestamp="1601221774957" />
+    <state x="295" y="121" width="424" height="479" key="FileChooserDialogImpl" timestamp="1601302899152">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="295" y="121" width="424" height="479" key="FileChooserDialogImpl/0.0.1024.728@0.0.1024.728" timestamp="1601302899152" />
+    <state width="934" height="352" key="GridCell.Tab.0.bottom" timestamp="1601305025491">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state width="934" height="352" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1601305025491" />
+    <state width="934" height="352" key="GridCell.Tab.0.center" timestamp="1601305025491">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state width="934" height="352" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1601305025491" />
+    <state width="934" height="352" key="GridCell.Tab.0.left" timestamp="1601305025491">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state width="934" height="352" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1601305025491" />
+    <state width="934" height="352" key="GridCell.Tab.0.right" timestamp="1601305025491">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state width="934" height="352" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1601305025491" />
+    <state x="226" y="92" width="562" height="537" key="NewPhpClassDialog" timestamp="1601231524602">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="226" y="92" width="562" height="537" key="NewPhpClassDialog/0.0.1024.728@0.0.1024.728" timestamp="1601231524602" />
+    <state x="330" y="289" width="354" height="142" key="NewPhpFileDialog" timestamp="1601302849725">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="330" y="289" width="354" height="142" key="NewPhpFileDialog/0.0.1024.728@0.0.1024.728" timestamp="1601302849725" />
+    <state x="393" y="243" width="322" height="235" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601289514259">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="393" y="243" width="322" height="235" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1024.728@0.0.1024.728" timestamp="1601289514259" />
+    <state x="245" y="171" width="524" height="379" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601241452079">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="245" y="171" width="524" height="379" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1024.728@0.0.1024.728" timestamp="1601241452079" />
     <state x="295" y="186" width="434" height="324" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1601209369245">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="295" y="186" width="434" height="324" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1024.728@0.0.1024.728" timestamp="1601209369245" />
-    <state x="355" y="182" width="463" height="357" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601206697793">
+    <state x="331" y="175" width="505" height="357" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601289536522">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="355" y="182" width="463" height="357" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1024.728@0.0.1024.728" timestamp="1601206697793" />
-    <state x="126" y="0" width="762" height="723" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601207973086">
+    <state x="331" y="175" width="505" height="357" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1024.728@0.0.1024.728" timestamp="1601289536522" />
+    <state x="126" y="0" width="762" height="723" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601297219069">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="126" y="0" width="762" height="723" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1024.728@0.0.1024.728" timestamp="1601207973086" />
+    <state x="126" y="0" width="762" height="723" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1024.728@0.0.1024.728" timestamp="1601297219069" />
+    <state x="176" y="160" key="run.anything.popup" timestamp="1601250244863">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="176" y="160" key="run.anything.popup/0.0.1024.728@0.0.1024.728" timestamp="1601250244863" />
+    <state x="175" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601215106358">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="175" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1024.728@0.0.1024.728" timestamp="1601215106358" />
   </component>
 </project>

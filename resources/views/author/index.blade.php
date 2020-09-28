@@ -22,7 +22,26 @@
 
 
 @section('content')
+    @if ($message = Session::get('success'))
 
+        <div class="alert alert-success alert-block">
+
+            <button type="button" class="close" data-dismiss="alert">×</button>
+
+            <strong>{{ $message }}</strong>
+
+        </div>
+
+    @endif
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <div class="col-12">
         <div class="card">
             <div class="card-header">
@@ -42,46 +61,49 @@
             <div class="card-body table-responsive p-0" style="height: 450px;">
                 <table id="myTable" class="table table-head-fixed">
 
-                    <thead class="titulos">
+                    <thead class="">
                     <tr>
-                        <th>#</th>
-                        <th>Serviço</th>
-                        <th>Descrição</th>
-                        <th>Valor</th>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
 
                     </thead>
                     <tbody class="insert">
-                    {{-- <tr > --}}
+                     <tr >
 
-                    {{-- @foreach($ficha as $row => $value)
+
+                     @foreach($posts as $key => $value)
                     <tr>
                       <td>
-                        <img src="{{Storage::url($value->imagem)}}" class="img-fluid mb-2" height="100px" width="100px">
+                        <img src="{{asset($value->image)}}" class="img-fluid mb-2" height="100px" width="100px">
                         </td>
-                      <td class="align-middle">{{$value->pet_nome}}</td>
-                      <td class="align-middle">{{($value->pet_idade < 1 ? "$value->pet_idade meses" : "$value->pet_idade anos")}}</td>
-                      <td class="align-middle">{{($value->pet_peso < 1 ? "$value->pet_peso g" : "$value->pet_peso kg" )}}</td>
-                      <td class="align-middle">{{$value->tipo}}</td>
-                      <td class="align-middle">{{$value->nome_dono}}</td>
-                      <td class="align-middle">{{ date('d/m/Y', strtotime($value->ultima_visita))}}</td>
-                      <td class="align-middle">
+
+                      <td class="align-middle">{{$value->title}}</td>
+                      <td class="align-middle">{{$value->name_of_author}}</td>
+                        <td class="align-middle">{{date('d/m/Y H:i', strtotime($value->date))}}</td>
+                        <td class="align-middle">
+                        <a href="{{route("posts.edit",$value->post_id)}}" class="btn btn-warning"><i class="fas fa-pencil-alt text-white"></i></a>
+                        </td>
+                        <td class="align-middle">
                       <div class="btn-group" role="group" aria-label="Basic example">
-                      <a href="{{route("fichas.edit",$value->id)}}" class="btn btn-warning"><i class="fas fa-pencil-alt text-white"></i></a>
-                        <a href="{{route("fichas.show",$value->id)}}" class="btn btn-info"><i class="fas fa-eye text-white"></i></a>
-                     <form action="{{route("fichas.destroy",$value->id)}}" method="POST">
+
+                     <form action="{{route("posts.destroy",$value->post_id)}}" method="POST">
                       @csrf
                       @method("DELETE")
                         <button class="btn btn-danger"><i class="fas fa-trash-alt text-white"></i></button>
-
+                     </form>
                       </div>
                      </td>
                        </tr>
                     <tr>
-                       @endforeach --}}
+                       @endforeach
 
 
-                    {{-- </tr> --}}
-                    {{-- <tr> --}}
+                     </tr>
+                     <tr>
                     </tbody>
                 </table>
 
