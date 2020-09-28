@@ -70,6 +70,13 @@
                     </div>
 
                 </div>
+                <p>  <strong>Tags of post: </strong>
+                @foreach($tags as $value)
+
+                  {!! " - " . $value!!}
+                @endforeach
+                    ...
+                </p>
                 <input type="text" id="tags" placeholder="write the tag and press enter" name="tags" value="" />
 
                 <button type="submit" class="btn btn-success ">Edit</button>
@@ -94,7 +101,8 @@
                 return false;
             }
         });
-        var tags_here ={!!json_encode($tags)!!}
+
+        var tags_here =[]
         var dados ={!!json_encode($tag_list)!!}
 
     </script>

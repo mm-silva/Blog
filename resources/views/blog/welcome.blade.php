@@ -50,11 +50,10 @@
                 <div class="col-8 text-right">
                     <nav class="site-navigation" role="navigation">
                         <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block mb-0">
-                            <li><a href="category.html">Home</a></li>
-                            <li><a href="category.html">Politics</a></li>
-                            <li><a href="category.html">Tech</a></li>
-                            <li><a href="category.html">Entertainment</a></li>
-                            <li><a href="category.html">Travel</a></li>
+                            <li><a href="{{route("blog")}}">Home</a></li>
+                            @foreach($tags as $tag)
+                            <li><a href="#.html">{{$tag->tag_name}}</a></li>
+                            @endforeach
                             <li><a href="{{route("login")}}">LOGIN</a></li>
                             <li class="d-none d-lg-inline-block"><a href="#" class="js-search-toggle"><span class="icon-search"></span></a></li>
                         </ul>
@@ -80,11 +79,11 @@
 
                 <div class="col-lg-4 mb-4">
                     <div class="entry2">
-                        <a href="single.html"><img src="{{asset($value->image)}}" alt="Image" class="img-fluid rounded"></a>
+                        <a href="{{route("show",$value->post_id)}}"><img src="{{asset($value->image)}}" alt="Image" class="img-fluid rounded"></a>
                         <div class="excerpt">
 
 
-                            <h2><a href="single.html">{{$value->title}}</a></h2>
+                            <h2><a href="{{route("show",$value->post_id)}}">{{$value->title}}</a></h2>
                             <div class="post-meta align-items-center text-left clearfix">
                                 <figure class="author-figure mb-0 mr-3 float-left"></figure>
                                 <span class="d-inline-block mt-1">By <a href="#">{{$value->name_of_author}}</a></span>

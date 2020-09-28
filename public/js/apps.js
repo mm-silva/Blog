@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
     },
     init: function(elem) {
       $('span', '#events').text('init');
-      $('<p class="results">').html('<strong>Tags:</strong> ' + elem.tags.join(' - ')).insertAfter(elem.$list);
+      $('<p class="results">').html('<strong>Tags:</p></strong> ' +  + elem.tags.join(' - ')).insertAfter(elem.$list);
     },
     create: function() {
       $('span', '#events').text('create');
@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
   });
 
   $('#tags').inputTags('tags', function(tags) {
-    $('.results').empty().html('<p>press Enter after writing a new tag <strong>- Tags:</strong></p> ' + tags.join(' - '));
+    $('.results').empty().html('<p>press Enter after writing a new tag <strong>- Tags:</strong></p> '  + tags.join(' - '));
   });
 
   var autocomplete = $('#tags').inputTags('options', 'autocomplete');

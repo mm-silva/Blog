@@ -166,7 +166,7 @@ FROM  post p  inner join author auth on p.author_id = auth.id where p.post_id = 
 
        $tags =  DB::select("SELECT
        tg.name as 'tag_name' FROM tag_post tgp INNER join post p on tgp.post_id = p.post_id
-       inner join tags tg on tgp.tag_id = tg.tag_id where p.post_id = $id;");
+       inner join tags tg on tgp.tag_id = tg.tag_id where p.post_id = $id limit 3;");
 
        foreach($tags as $tg){
            $tag[] = $tg->tag_name;
@@ -192,18 +192,16 @@ FROM  post p  inner join author auth on p.author_id = auth.id where p.post_id = 
     {
 
 
-
         $request->validate([
 
 
             "contents" => "required",
             "title" => "required",
-            "tags" => "required",
         ]);
 
 
         // Verifica se informou o arquivo e se é válido
-        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+        if (isset($request->image)) {
 
 
             // Recupera a extensão do arquivo
@@ -220,23 +218,15 @@ FROM  post p  inner join author auth on p.author_id = auth.id where p.post_id = 
 
             // Verifica se NÃO deu certo o upload (Redireciona de volta)
 
-
-            if ( empty($nameFile) ){
-
-                $nameFile = null;
-            }
-
-
+         ;
+        $post = ["image" => "/storage/public/uploads/$nameFile"];
 
         }
 
 
 //        array_diff(
-        $tagsdb = DB::table('tags')->pluck('name')->all();
+        //todas as tags
 
-        $tag = explode(",",$request->tags);
-
-        $tags = array_diff($tag, $tagsdb);
 
 
 
@@ -244,29 +234,34 @@ FROM  post p  inner join author auth on p.author_id = auth.id where p.post_id = 
             "title" => $request->title,
             "content" => $request->contents,
             "author_id" => Auth::id(),
-            "image" => ($nameFile = '' ? null : "/storage/public/uploads/"),
             "date" => Carbon::now(),
         ];
-            if(empty($post['image'])){
-                unset($post['image']);
-            }
+        if(isset($nameFile)) {
+            $post['image'] = "/storage/public/uploads/$nameFile";
+        }
+
         Post::where('post_id', $id)->update($post);
 
+        if(isset($request->tags)) {
+            //novas tags são criadas
+            $tagsdb = DB::table('tags')->pluck('name')->all();
 
-        //novas tags são criadas
-        foreach($tags as $name) {
-            Tags::create(['name'=> $name]);
+            $tag = explode(",",$request->tags);
 
+            $tags = array_diff($tag, $tagsdb);
+            foreach ($tags as $name) {
+                Tags::create(['name' => $name]);
+
+            }
+            // todas as tags são vinculadas com a tabela tag_post
+            foreach ($tag as $names) {
+                $tag_id = Tags::where(['name' => $names])->first()->tag_id;
+                DB::table('tag_post')->insert([
+                    'post_id' => $id,
+                    'tag_id' => $tag_id,
+                ]);
+            }
         }
-        // todas as tags são vinculadas com a tabela tag_post
-        foreach($tag as $names) {
-            $tag_id = Tags::where(['name' => $names])->first()->tag_id;
-            DB::table('tag_post')->insert([
-                'post_id' => $id,
-                'tag_id' => $tag_id,
-            ]);
-        }
-
 
 
 

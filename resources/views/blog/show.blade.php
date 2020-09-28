@@ -70,7 +70,6 @@
             <div class="row same-height justify-content-center">
                 <div class="col-md-12 col-lg-10">
                     <div class="post-entry text-center">
-                        <span class="post-category text-white bg-success mb-3">Nature</span>
                         <h1 class="mb-4"><a href="#">{{$value->title}}</a></h1>
                         <div class="post-meta align-items-center text-center">
                             dsfsdfsdf

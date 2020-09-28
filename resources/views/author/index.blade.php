@@ -18,7 +18,7 @@
 
 
 
-@section('title', '| Serviços')
+@section('title', '| Posts')
 
 
 @section('content')
