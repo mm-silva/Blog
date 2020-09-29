@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::get('/', function (Request $request) {
+//    return dd($request->all());
+//});
+
+Route::get('/', 'Blog\BlogController@index')->name('blog');
+Route::get('/post/{post}', 'Blog\BlogController@show')->name('show');
+
+Auth::routes();
+
+Route::prefix('/author')->group(function () {
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::resource('/posts', 'Author\PostsController');
+
 });
