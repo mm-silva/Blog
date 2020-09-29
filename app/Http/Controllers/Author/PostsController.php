@@ -83,7 +83,7 @@ class PostsController extends Controller
                 // Faz o upload:
 
 
-                $upload = $request->file("image")->storeAs('public/uploads', $nameFile);
+                $upload = $request->file("image")->storeAs('public/', $nameFile);
                 // Se tiver funcionado o arquivo foi armazenado em storage
 
                 // Verifica se NÃO deu certo o upload (Redireciona de volta)
@@ -109,7 +109,7 @@ class PostsController extends Controller
 
         $post = [
             "title" => $request->title,
-            "image" => "/storage/public/uploads/$nameFile",
+            "image" => "/storage/public/$nameFile",
             "content" => $request->contents,
             "author_id" => Auth::id(),
             "date" => Carbon::now(),
@@ -213,13 +213,13 @@ FROM  post p  inner join author auth on p.author_id = auth.id where p.post_id = 
             // Faz o upload:
 
 
-            $upload = $request->file("image")->storeAs('public/uploads', $nameFile);
+            $upload = $request->file("image")->storeAs('public/', $nameFile);
             // Se tiver funcionado o arquivo foi armazenado em storage
 
             // Verifica se NÃO deu certo o upload (Redireciona de volta)
 
          ;
-        $post = ["image" => "/storage/public/uploads/$nameFile"];
+        $post = ["image" => "/storage/public/$nameFile"];
 
         }
 
@@ -237,7 +237,7 @@ FROM  post p  inner join author auth on p.author_id = auth.id where p.post_id = 
             "date" => Carbon::now(),
         ];
         if(isset($nameFile)) {
-            $post['image'] = "/storage/public/uploads/$nameFile";
+            $post['image'] = "/storage/public/$nameFile";
         }
 
         Post::where('post_id', $id)->update($post);
