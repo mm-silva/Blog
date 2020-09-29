@@ -23,13 +23,11 @@ class BlogController extends Controller
     public function index()
     {
 
-        $tags =  DB::select("SELECT
-    tg.name as 'tag_name' FROM tag_post tgp INNER join post p on tgp.post_id = p.post_id
-                                            inner join tags tg on tgp.tag_id = tg.tag_id limit 3");
+        $tags =  DB::select("SELECT name as 'tag_name' from  tags  order by tag_id ASC limit 3;");
 
 
        $posts = DB::select("SELECT  p.post_id, p.title,p.content, p.image, auth.name as 'name_of_author',
-        p.date FROM post p  inner join author auth on p.author_id = auth.id ");
+        p.date FROM post p  inner join author auth on p.author_id = auth.id order by p.post_id ASC ");
 
 
         return view('blog.welcome')->with("posts", $posts)->with("tags", $tags);

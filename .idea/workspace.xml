@@ -20,8 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="454b3d9c-66d9-4fc0-b71b-a26b378e5304" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/storage/public" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,22 +245,22 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="295" y="121" width="424" height="479" key="FileChooserDialogImpl/0.0.1024.728@0.0.1024.728" timestamp="1601307184520" />
-    <state width="934" height="352" key="GridCell.Tab.0.bottom" timestamp="1601313236254">
+    <state width="666" height="173" key="GridCell.Tab.0.bottom" timestamp="1601391524035">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="934" height="352" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1601313236254" />
-    <state width="934" height="352" key="GridCell.Tab.0.center" timestamp="1601313236254">
+    <state width="666" height="173" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1601391524035" />
+    <state width="666" height="173" key="GridCell.Tab.0.center" timestamp="1601391524034">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="934" height="352" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1601313236254" />
-    <state width="934" height="352" key="GridCell.Tab.0.left" timestamp="1601313236253">
+    <state width="666" height="173" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1601391524034" />
+    <state width="666" height="173" key="GridCell.Tab.0.left" timestamp="1601391524034">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="934" height="352" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1601313236253" />
-    <state width="934" height="352" key="GridCell.Tab.0.right" timestamp="1601313236254">
+    <state width="666" height="173" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1601391524034" />
+    <state width="666" height="173" key="GridCell.Tab.0.right" timestamp="1601391524035">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="934" height="352" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1601313236254" />
+    <state width="666" height="173" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1601391524035" />
     <state width="222" height="457" key="HiddenNamespacesPopup" timestamp="1601309224429">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
@@ -293,10 +297,10 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="126" y="0" width="762" height="723" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1024.728@0.0.1024.728" timestamp="1601311074074" />
-    <state x="176" y="160" key="run.anything.popup" timestamp="1601307370040">
+    <state x="176" y="160" key="run.anything.popup" timestamp="1601390959726">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="176" y="160" key="run.anything.popup/0.0.1024.728@0.0.1024.728" timestamp="1601307370040" />
+    <state x="176" y="160" key="run.anything.popup/0.0.1024.728@0.0.1024.728" timestamp="1601390959726" />
     <state x="175" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601314350434">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
